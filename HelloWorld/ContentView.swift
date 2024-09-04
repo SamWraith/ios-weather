@@ -29,7 +29,7 @@ struct ContentView: View {
                     .font(.system(size: 70, weight: .medium))
                     .foregroundStyle(Color(.white))
                     .padding(.bottom, 40)
-                VStack{
+                ScrollView(.horizontal, showsIndicators: false){
                     HStack(spacing: 10) {
                         WeatherDayView(dayOfWeek: "TUE",
                                        imageName: "cloud.sun.fill",
